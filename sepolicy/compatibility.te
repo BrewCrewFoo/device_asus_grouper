@@ -25,11 +25,11 @@ allow init node:rawip_socket node_bind;
 allow keystore init:unix_stream_socket { read write };
 
 #============= media_app ==============
-allow media_app system_data_file:file append;
+#allow media_app system_data_file:file append;
 
 #============= mediaserver ==============
 allow mediaserver init:unix_stream_socket { read write };
-allow mediaserver system_data_file:file open;
+#allow mediaserver system_data_file:file open;
 
 #============= nfc ==============
 #allow nfc system_data_file:file append;
@@ -44,11 +44,11 @@ allow platform_app unlabeled:file { read getattr open };
 
 #============= radio ==============
 allow radio init:unix_stream_socket { read write };
-allow radio system_data_file:file append;
+#allow radio system_data_file:file append;
 
 #============= release_app ==============
 allow release_app init:unix_stream_socket { read write };
-allow release_app system_data_file:file append;
+#allow release_app system_data_file:file append;
 
 #============= shared_app ==============
 allow shared_app init:unix_stream_socket { read write };
