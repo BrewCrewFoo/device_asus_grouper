@@ -32,7 +32,7 @@ allow mediaserver init:unix_stream_socket { read write };
 allow mediaserver system_data_file:file open;
 
 #============= nfc ==============
-allow nfc system_data_file:file append;
+#allow nfc system_data_file:file append;
 
 #============= ping ==============
 allow ping adbd:process sigchld;
